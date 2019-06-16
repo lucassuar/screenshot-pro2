@@ -1,0 +1,18 @@
+/* CSS for image editor */
+
+.mycanvas {
+    background-color: #4A90E2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.none-upload {
+    display: none;
+}
+
+.menu-title-2 {
+    color: #c5c5c5;
+}
+
