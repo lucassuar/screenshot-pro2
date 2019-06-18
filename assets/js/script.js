@@ -49,24 +49,37 @@ window.exportAsImage = function() {
 
 
 // Color Picker
-const pickr1 = new Pickr({
-    el: '#color-picker-1',
-    default: "303030",
-    components: {
-        preview: true,
-        opacity: true,
-        hue: true,
 
-        interaction: {
-            hex: true,
-            rgba: true,
-            hsla: true,
-            hsva: true,
-            cmyk: true,
-            input: true,
-            clear: true,
-            save: true
-        }
-    }
-});
 // END - Color Picker
+
+// Horizontal padding slider
+
+var slider = document.getElementById("horizontal-padding");
+var mycanvas = document.getElementById("mycanvas");
+mycanvas.style.padding = "50px";
+
+slider.addEventListener('change', function() {
+    mycanvas.style.padding = slider.value + "px";
+});
+
+// END - Horizontal padding slider
+
+
+// Header switcher
+    var switchHead = document.getElementById("customSwitches");
+    var checkbox = document.querySelector('input[type="checkbox"]');
+    var svg = document.getElementById('svg');
+
+
+    switchHead.addEventListener('change', function() {
+        if (this.checked == true) {
+          // do this
+          svg.style.display = 'none';
+        } else {
+          // do that
+          svg.style.display = 'inline';
+        }
+      });
+ 
+
+  // END - Header switcher

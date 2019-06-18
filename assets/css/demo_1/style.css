@@ -259,11 +259,53 @@
 /* Navbar */
 .navbar.default-layout {
   font-family: "roboto", sans-serif;
-  background: #0f25d5;
   transition: background 0.25s ease;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
-  -ms-transition: background 0.25s ease; }
+  -ms-transition: background 0.25s ease; 
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  padding-left: 1em;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}}
   .navbar.default-layout .navbar-brand-wrapper {
     background: #20344c;
     width: 270px;
@@ -296,7 +338,6 @@
     -moz-transition: width 0.25s ease;
     -ms-transition: width 0.25s ease;
     color: #001737;
-    background-color: 
     padding-left: 15px;
     padding-right: 15px;
     width: calc(100% - 270px);

@@ -2,10 +2,7 @@
 
 .mycanvas {
     background-color: #4A90E2;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    padding-left: 75px;
-    padding-right: 75px;
+    
 }
 
 .none-upload {
@@ -16,3 +13,7 @@
     color: #c5c5c5;
 }
 
+.svg-off {
+    display: none;
+    background-color: red;
+}
