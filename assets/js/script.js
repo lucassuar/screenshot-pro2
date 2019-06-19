@@ -52,7 +52,7 @@ window.exportAsImage = function() {
 
 // END - Color Picker
 
-// Horizontal padding slider
+// Padding slider
 
 var slider = document.getElementById("horizontal-padding");
 var mycanvas = document.getElementById("mycanvas");
@@ -62,12 +62,12 @@ slider.addEventListener('change', function() {
     mycanvas.style.padding = slider.value + "px";
 });
 
-// END - Horizontal padding slider
+// END -  padding slider
 
 
 // Header switcher
     var switchHead = document.getElementById("customSwitches");
-    var checkbox = document.querySelector('input[type="checkbox"]');
+    
     var svg = document.getElementById('svg');
 
 
@@ -75,11 +75,35 @@ slider.addEventListener('change', function() {
         if (this.checked == true) {
           // do this
           svg.style.display = 'none';
+          preview.style.borderTopLeftRadius = '8px';
+          preview.style.borderTopRigthRadius = '8px';
+
         } else {
           // do that
           svg.style.display = 'inline';
+          preview.style.borderTopLeftRadius = '0px';
+          preview.style.borderTopRigthRadius = '0px';
         }
       });
  
 
   // END - Header switcher
+
+  // Dark Header switcher
+  var switcDark = document.getElementById("switcherDark");
+    
+  var svg = document.getElementById('svg');
+
+
+  switcDark.addEventListener('change', function() {
+      if (this.checked == true) {
+        // do this
+        svg.style.background = '#3c3a22';
+      } else {
+        // do that
+        svg.style.background = '#e8e8e8';
+      }
+    });
+
+
+// END - Dark Header switcher

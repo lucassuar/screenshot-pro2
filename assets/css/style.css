@@ -13,7 +13,18 @@
     color: #c5c5c5;
 }
 
-.svg-off {
-    display: none;
-    background-color: red;
+.custom-file {
+    width: 25%;
 }
+
+.custom-file-input input[type=file] {
+    background-color: #20344c;
+  }
+
+  .custom-file input[type=file] {
+    background-color: #20344c;
+  }
+
+  body  {
+      font-size: 12px;
+  }

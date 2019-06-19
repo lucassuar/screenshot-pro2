@@ -58,13 +58,25 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item-2 pb-2 mb-3">
-                        <div class="nav-link-2 d-block">
-                            <span class="menu-title-2">Margin Vertical</span>
-                            <form class="range-field mt-2">
-                                <input type="range" min="0" max="100" />
-                            </form>
-                        </div>
+                    <li class="nav-item-2 mb-3">
+                            <div class="nav-link-2 d-block ">
+                                <span class="menu-title-2 ">Header</span>
+                                <!-- Default switch -->
+                                <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitches" />
+                                         <label class="custom-control-label" for="customSwitches"></label>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item-2 mb-3">
+                            <div class="nav-link-2 d-block ">
+                                <span class="menu-title-2 ">Header</span>
+                                <!-- Default switch -->
+                                <div class="custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switcherDark" />
+                                         <label class="custom-control-label" for="switcherDark"></label>
+                                </div>
+                            </div>
                     </li>
                     <li class="nav-item-2 mb-3">
                         <div class="nav-link-2 d-block">
@@ -81,14 +93,9 @@
                         </div>
                     </li>
                     <li class="nav-item-2 mb-3">
-                        <div class="nav-link-2 d-block ">
-                            <span class="menu-title-2 ">Header</span>
-                            <!-- Default switch -->
-                            <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" id="customSwitches" />
-                                     <label class="custom-control-label" for="customSwitches"></label>
+                            <div class="nav-link-2 d-block ">
+                                    <input class="btn btn-success float-right btn-md" type="button" value="Download" name="export" onclick="exportAsImage()" />
                             </div>
-                        </div>
                     </li>
                 </ul>
             </nav>
@@ -99,8 +106,13 @@
                          <!-- Upload button-->
                             <div class="col-md-10  mt-4 mb-4 d-inline">
                               <!-- <button type="button " class="btn btn-primary toolbar-item ">New</button> -->
-                                <input class="btn" type="file" id="filetag">
-                                <input class="btn btn-success float-right" type="button" value="Download" name="export" onclick="exportAsImage()" />
+                                
+                                <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="filetag"
+                                          aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file ↓</label>
+                                </div>
+                                
                             </div>
                           <!-- END Upload button-->
                         <div class="col-md-10 grid-margin">
@@ -113,7 +125,7 @@
                                                         0
                                                         406
                                                         3" xmlns:xlink="http://www.w3.org/1999/xlink" style="border-radius: 8px 8px 0px 0px; background-color: rgb(232, 232, 232);"><g fill="none" fill-rule="nonzero">
-                                                        <rect width="100%" fill="#e8e8e8"></rect>
+                                                        <rect width="100%" ></rect>
                                                         </g>
                                             </svg>
                                             <img style="width: 100%; box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px 0px; border-radius: 0px 0px 8px 8px; margin-top: -5px;" src="" id="preview">
