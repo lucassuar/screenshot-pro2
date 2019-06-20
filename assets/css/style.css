@@ -5,12 +5,21 @@
     
 }
 
+#preview {
+    width: 100%; 
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px 0px; 
+    border-radius: 0px 0px 8px 8px; 
+    margin-top: -5px;
+}
+
 .none-upload {
     display: none;
 }
 
 .menu-title-2 {
     color: #c5c5c5;
+    text-align: center;
+    font-size: 14px;
 }
 
 .custom-file {
@@ -26,7 +35,7 @@
   }
 
   body  {
-      font-size: 12px;
+      font-size: 14px;
   }
 
   .rounded-0 {
@@ -37,4 +46,20 @@
   .color-picker-1, .color-picker-div {
       background-color: #20344c;
       border-color: #20344c;
+  }
+
+
+  .main-panel, .container-fluid, .page-body-wrapper {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .custom-control-label {
+      color: #c5c5c5;
+  }
+
+  .designation {
+       color: #ffffff;
+       font-weight: 400;
+       padding-top: 5px;
   }
