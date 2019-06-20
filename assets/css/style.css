@@ -28,3 +28,13 @@
   body  {
       font-size: 12px;
   }
+
+  .rounded-0 {
+      border-color: #20344c;
+      font-size: 14px;
+  }
+
+  .color-picker-1, .color-picker-div {
+      background-color: #20344c;
+      border-color: #20344c;
+  }

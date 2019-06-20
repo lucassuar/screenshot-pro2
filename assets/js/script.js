@@ -107,3 +107,6 @@ slider.addEventListener('change', function() {
 
 
 // END - Dark Header switcher
+
+
+
